@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Typescript Presentation</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>TypeScript</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="https://github.com/devbiirds">Minakov Vadim</a></small>
+					</p>
+				</section>
+				<section>
+					<h3>History</h3>
+				</section>
+				<section>
+					<h1></h1>
+					<h3>Design</h3>
+					
+				</section>
+				<section>
+					<section>
+					<h3>Additional features include:</h3>
+					<ul>
+						<li>Type annotations and compile-time type checking</li>
+						<li>Type inference</li>
+						<li>Type erasure</li>
+						<li>Interfaces</li>
+						<li>Enumerated types</li>
+						<li>Generics</li>
+						<li>Namespaces</li>
+						<li>Tuples</li>
+						<li>Async/await</li>
+					</ul>
+				</section>
+					<section>
+						<p>The following features are backported from ECMAScript 2015:</p>
+						<ul>
+							<li>Classes</li>
+							<li>Modules</li>
+							<li>Abbreviated "arrow" syntax for anonymous functions</li>
+							<li>Optional parameters and default parameters</li>
+								
+						</ul>
+					</section>
+				</section>
+				
+					<section>
+						<h3>Type annotations</h3>
+						<img src="./type.png" alt="">
+					</section>
+					<section>
+						Declaration files 
+						<img src="./declare.png" alt="">
+					</section>
+					<section>
+						<h3>Classes</h3>
+						<section>
+							<img src="./classes.png" alt="">
+						</section>
+						
+					</section>
+					<section>
+						<h3>Generics</h3>
+						<section>
+							<img src="./generics.png" alt="">
+						</section>
+					</section>
+					<section>
+						<h3>Modules and namespaces</h3>
+						
+					</section>
+					<section>
+						<h3>Compiler</h3>
+						
+					</section>
+					
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
