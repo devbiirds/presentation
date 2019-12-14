@@ -32,9 +32,13 @@ Syntactically, TypeScript is very similar to JScript .NET, another Microsoft imp
   
 ###### (Slide - Type annotations)
 TypeScript provides static typing through type annotations to enable type checking at compile time. This is optional and can be ignored to use the regular dynamic typing of JavaScript.
+
 `function add(left: number, right: number): number {`
+
 	`return left + right;`
+
 `}`
+
 The annotations for the primitive types are number, boolean and string. Weakly- or dynamically-typed structures are of type any.
 Type annotations can be exported to a separate declarations file to make type information available for TypeScript scripts using types already compiled into JavaScript. Annotations can be declared for an existing JavaScript library, as has been done for Node.js and jQuery.
 The TypeScript compiler makes use of type inference to infer types when types are not given. For example, the add method in the code above would be inferred as returning a number even if no return type annotation had been provided. This is based on the static types of left and right being numbers, and the compiler's knowledge that the result of adding two numbers is always a number. However, explicitly declaring the return type allows the compiler to verify correctness.
