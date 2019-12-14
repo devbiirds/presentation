@@ -44,21 +44,25 @@ If no type can be inferred because of lack of declarations, then it defaults to 
 ###### (Slide - Declaration files) 
 When a TypeScript script gets compiled there is an option to generate a declaration file (with the extension .d.ts) that functions as an interface to the components in the compiled JavaScript. In the process the compiler strips away all function and method bodies and preserves only the signatures of the types that are exported. The resulting declaration file can then be used to describe the exported virtual TypeScript types of a JavaScript library or module when a third-party developer consumes it from TypeScript.
 The concept of declaration files is analogous to the concept of header file found in C/C++.
+
 `declare namespace arithmetics {
     add(left: number, right: number): number;
     subtract(left: number, right: number): number;
     multiply(left: number, right: number): number;
     divide(left: number, right: number): number;
 }`
+
 Type declaration files can be written by hand for existing JavaScript libraries, as has been done for jQuery and Node.js.
 Large collections of declaration files for popular JavaScript libraries are hosted on GitHub in DefinitelyTyped.
 ###### (Slide - Classes)
 TypeScript supports ECMAScript 2015 classes that integrate the optional type annotations support.
 ###### (Slide - Generics) 
 TypeScript supports generic programming.
+
 `function doSomething<T>(arg: T): T {`
     `return arg;`
 `}`
+
 Modules and namespaces
 TypeScript distinguishes between modules and namespaces. Both features in TypeScript support encapsulation of classes, interfaces, functions and variables into containers. Namespaces (formerly internal modules) utilize immediately-invoked function expression of JavaScript to encapsulate code, whereas modules (formerly external modules) leverage JavaScript library patterns to do so (AMD or CommonJS). 
 ###### (Slide - Compiler)  
